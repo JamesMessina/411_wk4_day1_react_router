@@ -8,16 +8,15 @@ class About extends Component {
     }
 
     toggleSwitch = () => {
-        const newVal = !this.state.checked
-        if (newVal) {
+        if(this.state.checked){
             return this.setState({
-                heading: 'About FakeCars.com',
-                checked: newVal
+                heading: 'About Cars.com',
+                checked: false
             })
         }
         return this.setState({
-            heading: 'About Cars.com',
-            checked: newVal
+            heading: 'About FakeCars.com',
+            checked: true
         })
     }
 

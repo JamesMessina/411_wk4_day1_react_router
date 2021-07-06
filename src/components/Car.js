@@ -4,6 +4,8 @@ import cars from '../cars.json'
 // Container, Paper, Chip //
 
 const Car = (props) => {
+    const { id } = props.match.parms.id
+    
     return (
         <h1>A specific car</h1>
     )
