@@ -12,7 +12,6 @@ const Home = () => {
                     <CardContent className="text-gray">
                         <span>{car.Name.toUpperCase()}</span>
                         <ul>
-                            <li>id: {car.id}</li>
                             <li>Miles_per_Gallon: {car.Miles_per_Gallon}</li>
                             <li>Cylinders: {car.Cylinders}</li>
                             <li>Displacement: {car.Displacement}</li>
@@ -21,7 +20,7 @@ const Home = () => {
                     </CardContent>
                     <Divider />
                     <CardActions style={{ color: 'mediumblue' }}>
-                        <Link to="/car/${car.id}">See More Details</Link>
+                        <Link to={`/car/${car.id}`}>See More Details</Link>
                     </CardActions>
                 </Card>
             ))}
